@@ -46,6 +46,12 @@
 \newcommand{\keybindingAltTri}[4]{\keys{#1} $|$ \keys{#2} $|$ \keys{#3} ~\dotfill{}~#4\\}
 
 % ----------------------------------------------
+% 					Flags style
+% ----------------------------------------------
+\newcommand{\flag}[2]{{\bf\ttfamily\small #1} ~\dotfill{}~#2\\}
+\newcommand{\flagAlt}[3]{{\bf\ttfamily\small #1} $|$ {\bf\ttfamily\small #2} ~\dotfill{}~#3\\}
+
+% ----------------------------------------------
 % 					Commands Style
 % ----------------------------------------------
 \newcommand{\command}[2]{{\bf\ttfamily\small #1} ~\dotfill{}~#2\\}

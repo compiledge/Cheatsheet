@@ -20,6 +20,21 @@
 \RequirePackage{graphicx}
 \RequirePackage{multicol}
 \RequirePackage{menukeys}
+\RequirePackage{xcolor}
+
+% ----------------------------------------------
+% 					Section config
+% ----------------------------------------------
+\renewcommand{\section}{\@startsection{section}{1}{0mm}%
+                                {.2ex}%
+                                {.2ex}%x
+                                {\sffamily\small\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{1}{0mm}%
+                                {.2ex}%
+                                {.2ex}%x
+                                {\sffamily\small\bfseries}}
+
+\newcommand{\newSection}[2]{{\color{#2}\section{#1}}}
 
 % ----------------------------------------------
 % 					Key bindings Style

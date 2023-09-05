@@ -22,9 +22,19 @@
 \RequirePackage{menukeys}
 
 % ----------------------------------------------
-% 					Key bindings
+% 					Key bindings Style
 % ----------------------------------------------
-% \newcommand{\keybinding}[2]{\keys{#1} ~\dotfill{}~#2\\}
+\newcommand{\keybinding}[2]{\keys{#1} ~\dotfill{}~#2\\}
+\newcommand{\keybindingDb}[3]{\keys{#1} , \keys{#2} ~\dotfill{}~#3\\}
+\newcommand{\keybindingTri}[4]{\keys{#1} , \keys{#2}, \keys{#3} ~\dotfill{}~#4\\}
+\newcommand{\keybindingAlt}[3]{\keys{#1} $|$ \keys{#2} ~\dotfill{}~#3\\}
+\newcommand{\keybindingAltTri}[4]{\keys{#1} $|$ \keys{#2} $|$ \keys{#3} ~\dotfill{}~#4\\}
+
+% ----------------------------------------------
+% 					Commands Style
+% ----------------------------------------------
+\newcommand{\command}[2]{{\bf\ttfamily\small #1} ~\dotfill{}~#2\\}
+\newcommand{\commandAlt}[3]{{\bf\ttfamily\small #1} $|$ {\bf\ttfamily\small #2} ~\dotfill{}~#3\\}
 
 % ----------------------------------------------
 % 					Config paragraphs

@@ -1,14 +1,29 @@
 \documentclass[10pt,landscape,a4paper]{cheatsheet}
 
 \begin{document}
+\sffamily
+\small
 \begin{multicols*}{5}
 
-	Hello world!
+	\keybinding{h}{left}
+	\keybinding{j}{down}
+	\keybinding{i}{up}
+	\keybinding{l}{right}
 
-% \keybinding{h}{left}
-% \keybinding{j}{down}
-% \keybinding{i}{up}
-% \keybinding{l}{right}
+	\commandAlt{b}{B}{begin of the word/WORD}
+	\commandAlt{w}{W}{next word/WORD}
+	\commandAlt{e}{E}{end of the word/WORD}
+	\commandAlt{ge}{gE}{end of previous word/WORD}
+	\command{s}{sentence}
+	\command{p}{paragraph}
+
+	\keybinding{\%}{matching parentheses}
+	\keybindingDb{[}{]}{matching 'c' char}
+	\keybindingDb{C-i}{C-o}{jump in/out}
+	\keybindingDb{(}{)}{jump to start/end sentence}
+	\keybindingDb{\{}{\}}{jump to start/end paragraph}
+	\keybindingAltTri{H}{M}{L}{j. top, middle, bottom}
+	\keybindingAlt{Esc}{C-[}{switch to normal mode}
 
 \end{multicols*}
 \end{document}

@@ -1,0 +1,46 @@
+\documentclass[10pt,landscape,a4paper]{cheatsheet}
+
+\begin{document}
+\sffamily
+\small
+\begin{multicols*}{5}
+
+	\newSection{Commits}{purple}
+
+	\command{\$ git commit}{save commit}
+	\flagAlt{-m}{--message}{message}
+	\flagAlt{?}{--ameend}{rewrite message}
+
+	\newSection{File system}{red}
+
+	\command{\$ git mv}{move/rename}
+	\flagAlt{-f}{--force}{messenge}
+	\flagAlt{-n}{--dry-run}{simulate}
+
+	\command{\$ git reset}{restore commit}
+	\flagAlt{?}{--mixed}{Index area}
+	\flagAlt{?}{--hard}{Index+Working dir}
+
+	\command{\$ git ls-files}{list files}
+	\flagAlt{-o}{--others}{Nontracking files}
+
+	\command{\$ git clean}{delete un.files}
+	\flagAlt{}{--force}{Necessary}
+	\flagAlt{-v}{--force}{state file}
+	\flagAlt{-d}{?}{directories}
+	\flagAlt{-n}{--dry-run}{simulate}
+	\flagAlt{-X}{?}{ignored files}
+	\flagAlt{-x}{?}{ignored files+untracked}
+
+	\command{\$ git stash}{hide changes}
+	\flag{save}{save stash}
+	\flag{list}{list h.changes}
+	\flag{pop}{pop+apply change}
+	\flag{apply}{apply change}
+
+	\command{\$ git update-index}{set flag}
+	\flag{[--no]--assume-unchanged}{ignore f.}
+
+\end{multicols*}
+\end{document}
+

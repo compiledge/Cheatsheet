@@ -1,17 +1,67 @@
 \documentclass[10pt,landscape,a4paper]{cheatsheet}
 
+\usepackage{fontawesome}
+
 \begin{document}
 \sffamily
 \small
 \begin{multicols*}{5}
 
-	\newSection{Commits}{purple}
+	\newSection{{\faGears} Config git}{purple}
 
+	\command{\$ git config}{change configs}
+	\flag{--global user.name}{}
+	\flag{--global user.email}{}
+
+	\newSection{{} Config etc}{purple}
+
+	\command{\$ git init}{start repository}
+	\command{\$ git status}{check dir and stage}
+	\command{\$ git add}{add file to stage}
+	\command{\$ git rev-parse}{check reference}
+
+	\newSection{Commits}{purple}
 	\command{\$ git commit}{save commit}
 	\flagAlt{-m}{--message}{message}
 	\flagAlt{?}{--ameend}{rewrite message}
 
-	\newSection{File system}{red}
+	\newSection{{\faCodeFork} Git Branch}{purple}
+	\command{\$ git branch}{}
+	\command{\$ git merge}{}
+	\command{\$ git checkout}{}
+	\flag{--force}{}
+	\command{\$ git push}{}
+	\command{\$ git branch}{}
+
+	\newSection{{\faHistory} Logs}{purple}
+	\command{\$ git log}{check logs}
+	\flag{--oneline}{commits titles}
+
+	\newSection{{\faLanguage} Diff}{purple}
+	\command{\$ git diff}{check diffs}
+	\flag{--git}{simulate diff in git}
+	\flag{--stat}{?}
+	\flag{--word-diff}{?}
+
+	\newSection{{\faGithubAlt} Git Remote}{purple}
+	\command{\$ git remote}{}
+	\flag{add origin [url]}{}
+	\flag{show}{}
+	\flag{prume}{}
+	\flag{rm}{}
+	\flag{--verbose}{list remote repos.}
+	\command{\$ git push}{}
+	\flag{--set-upstream}{}
+	\command{\$ git clone}{}
+	\command{\$ git pull}{}
+	\command{\$ git fetch}{}
+	\command{\$ git rebase}{}
+
+ % - `--bare` e `--mirror`: criar um repositório voltado para hospedagem;
+ % - `--depth [int]`: criar um *shallow clone*, *i.e.*, determinar a quantiade de revisões que serão baixadas; Útil quando o tempo de clonagem é alto demais.
+ % - `--recursive-submodules`: inicializa todos os submódulos do repositório;
+
+	\newSection{{\faFilesO} File system}{red}
 
 	\command{\$ git mv}{move/rename}
 	\flagAlt{-f}{--force}{messenge}
@@ -40,6 +90,13 @@
 
 	\command{\$ git update-index}{set flag}
 	\flag{[--no]--assume-unchanged}{ignore f.}
+
+	\newSection{{\faKey} SSH Conection}{red}
+	\command{\$ ssh git@github.com}{?}
+	\flag{-T}{no terminal emulator}
+	\flag{-v}{verbose}
+
+	% \newSection{{\faDashboard} Control}{red}
 
 \end{multicols*}
 \end{document}

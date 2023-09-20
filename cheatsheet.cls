@@ -28,34 +28,54 @@
 \renewcommand{\section}{\@startsection{section}{1}{0mm}%
                                 {.2ex}%
                                 {.2ex}%x
-                                {\sffamily\small\bfseries}}
+                                {\small\sffamily}}
 \renewcommand{\subsection}{\@startsection{subsection}{1}{0mm}%
                                 {.2ex}%
                                 {.2ex}%x
-                                {\sffamily\small\bfseries}}
+                                {\small\sffamily}}
 
 \newcommand{\newSection}[2]{{\color{#2}\section{#1}}}
+
+\newcommand{\newSubSection}[2]{{\color{#2}\subsection{#1}}}
 
 % ----------------------------------------------
 % 					Key bindings Style
 % ----------------------------------------------
-\newcommand{\keybinding}[2]{\keys{#1} ~\dotfill{}~#2\\}
-\newcommand{\keybindingDb}[3]{\keys{#1} , \keys{#2} ~\dotfill{}~#3\\}
-\newcommand{\keybindingTri}[4]{\keys{#1} , \keys{#2}, \keys{#3} ~\dotfill{}~#4\\}
-\newcommand{\keybindingAlt}[3]{\keys{#1} $|$ \keys{#2} ~\dotfill{}~#3\\}
-\newcommand{\keybindingAltTri}[4]{\keys{#1} $|$ \keys{#2} $|$ \keys{#3} ~\dotfill{}~#4\\}
+\newcommand{\keybinding}[2]{\keys{#1} ~\dotfill{}~#2
+
+}
+\newcommand{\keybindingDb}[3]{\keys{#1} , \keys{#2} ~\dotfill{}~#3
+
+}
+\newcommand{\keybindingTri}[4]{\keys{#1} , \keys{#2}, \keys{#3} ~\dotfill{}~#4
+
+}
+\newcommand{\keybindingAlt}[3]{\keys{#1} $|$ \keys{#2} ~\dotfill{}~#3
+
+}
+\newcommand{\keybindingAltTri}[4]{\keys{#1} $|$ \keys{#2} $|$ \keys{#3} ~\dotfill{}~#4
+
+}
 
 % ----------------------------------------------
 % 					Flags style
 % ----------------------------------------------
-\newcommand{\flag}[2]{{\bf\ttfamily\small #1} ~\dotfill{}~#2\\}
-\newcommand{\flagAlt}[3]{{\bf\ttfamily\small #1} $|$ {\bf\ttfamily\small #2} ~\dotfill{}~#3\\}
+\newcommand{\flag}[2]{{\bf\ttfamily\small #1} ~\dotfill{}~#2
+
+}
+\newcommand{\flagAlt}[3]{{\bf\ttfamily\small #1} $|$ {\bf\ttfamily\small #2} ~\dotfill{}~#3
+
+}
 
 % ----------------------------------------------
 % 					Commands Style
 % ----------------------------------------------
-\newcommand{\command}[2]{{\bf\ttfamily\small #1} ~\dotfill{}~#2\\}
-\newcommand{\commandAlt}[3]{{\bf\ttfamily\small #1} $|$ {\bf\ttfamily\small #2} ~\dotfill{}~#3\\}
+\newcommand{\command}[2]{{\bf\ttfamily\small #1} ~\dotfill{}~#2
+
+}
+\newcommand{\commandAlt}[3]{{\bf\ttfamily\small #1} $|$ {\bf\ttfamily\small #2} ~\dotfill{}~#3
+
+}
 
 % ----------------------------------------------
 % 					Config paragraphs

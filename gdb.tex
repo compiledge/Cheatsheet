@@ -14,12 +14,25 @@ GDB \\ Cheat Sheat \\ @compiledge
 \end{flushright}
 \vspace{-0.25cm}
 
+
+
+\begin{ppbox}{\faTerminal}{Start program}
+	\command{> gdb $[bin]$}{start GDB}
+	\flag{-tui}{show code}
+	\flag{-command}{read init file}
+\end{ppbox}
+
 \begin{obox}{\faStopCircleO}{Break points}
 	\command{> break $i$}{insert bk point at $i$}
+	\command{> condition $i$ $exp$}{insert cond}
+	\command{> clear $i$}{remove bk}
 \end{obox}
 
 \begin{gbox}{\faPlayCircle}{Flux Control}
+	\command{> run $[args]$}{start program}
 	\command{> continue}{resume execution}
+	\command{> next}{step over}
+	\command{> step}{step info}
 \end{gbox}
 
 \begin{bbox}{\faSearch}{Inspecting Variables}
@@ -32,6 +45,11 @@ GDB \\ Cheat Sheat \\ @compiledge
 	\command{> up}{show parent stack}
 	\command{> down}{show child stack}
 \end{dbox}
+
+% Keys
+	% C-x-a tui
+	% <esc> move to scroll code window
+	% <i> move to console window
 
 \end{multicols*}
 \end{document}
